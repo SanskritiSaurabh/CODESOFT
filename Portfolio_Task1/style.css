@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(15, 23, 42, 0.95);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(
+        to right,
+        rgba(15,23,42,0.9),
+        rgba(15,23,42,0.6)
+    );
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #cbd5f5;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary {
+    background: #38bdf8;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.about {
+    padding: 80px 60px;
+    text-align: center;
+    background: #020617;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+
+.skills {
+    display: flex;
+    gap: 25px;
+    padding: 80px 60px;
+}
+
+.skill-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 10px;
+    width: 33%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(56,189,248,0.1);
+}
+
+.cta {
+    padding: 80px 60px;
+    text-align: center;
+    background: linear-gradient(to right, #38bdf8, #2563eb);
+    color: #020617;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
